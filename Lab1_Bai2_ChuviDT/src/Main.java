@@ -1,18 +1,39 @@
-import java.util.Scanner;//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.util.Scanner;
+import java.util.InputMismatchException;
 public class Main {
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Nhap 2 canh cua hinh chu nhat:");
-        int a = scanner.nextInt();
-        int b = scanner.nextInt();
+        int a = 0, b = 0;
+        boolean nhapso = false;
+        while(!nhapso)
+        {
+            try
+            {
+                System.out.print("Nhap 2 canh cua hinh chu nhat:");
+                a = scanner.nextInt();
+                b = scanner.nextInt();
 
-        System.out.println("Dien tich:"+ a*b);
-        System.out.println("Chu vi:"+ (a+b)*2);
+                if(a <= 0 || b <= 0)
+                {
+                    System.out.println("Vui long nhap so lon hon 0");
+                }
+                else
+                {
+                    System.out.println("Dien tich:"+ a*b);
+                    System.out.println("Chu vi:"+ (a+b)*2);
 
-        System.out.println("Canh nho la:" + Math.min(a,b));
+                    System.out.println("Canh nho la:" + Math.min(a,b));
+                    nhapso = true;
+                }
+
+            }
+            catch (InputMismatchException e)
+            {
+                System.out.println("Vui long nhap so");
+                scanner.nextLine();
+            }
+        }
         scanner.close();
-
     }
 }

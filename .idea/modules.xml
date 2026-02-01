@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/65133334-JavaProgramming.iml" filepath="$PROJECT_DIR$/.idea/65133334-JavaProgramming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Helloword/Helloword.iml" filepath="$PROJECT_DIR$/Helloword/Helloword.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab1_Bai1_DTB/Lab1_Bai1_DTB.iml" filepath="$PROJECT_DIR$/Lab1_Bai1_DTB/Lab1_Bai1_DTB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab1_Bai2_ChuviDT/Lab1_Bai2_ChuviDT.iml" filepath="$PROJECT_DIR$/Lab1_Bai2_ChuviDT/Lab1_Bai2_ChuviDT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab1_Bai3_TheTich/Lab1_Bai3_TheTich.iml" filepath="$PROJECT_DIR$/Lab1_Bai3_TheTich/Lab1_Bai3_TheTich.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab1_Bai4_Delta/Lab1_Bai4_Delta.iml" filepath="$PROJECT_DIR$/Lab1_Bai4_Delta/Lab1_Bai4_Delta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tinh_BMI/Tinh_BMI.iml" filepath="$PROJECT_DIR$/Tinh_BMI/Tinh_BMI.iml" />
+    </modules>
+  </component>
+</project>
