@@ -1,12 +1,26 @@
 import java.util.Scanner;
+import java.util.InputMismatchException;
 public class Main {
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Nhap a b c cua phuong trinh bac 2:");
-        double a = scanner.nextDouble();
-        double b = scanner.nextDouble();
-        double c = scanner.nextDouble();
+        double a = 0, b = 0, c = 0;
+        boolean nhapso = false;
+        while(!nhapso)
+        {
+            try
+            {
+                System.out.print("Nhap a b c cua phuong trinh bac 2:");
+                a = scanner.nextDouble();
+                b = scanner.nextDouble();
+                c = scanner.nextDouble();
+            }
+            catch
+            {
+                System.out.println("Vui long nhap so");
+            }
+        }
+
 
         double delta = Math.pow(b,2) - 4*a*c;
         System.out.println("Delta: " + delta);
