@@ -14,13 +14,14 @@ public class Main {
                 a = scanner.nextDouble();
                 b = scanner.nextDouble();
                 c = scanner.nextDouble();
+                nhapso = true;
             }
-            catch
+            catch(InputMismatchException e)
             {
                 System.out.println("Vui long nhap so");
+                scanner.nextLine();
             }
         }
-
 
         double delta = Math.pow(b,2) - 4*a*c;
         System.out.println("Delta: " + delta);
@@ -31,5 +32,6 @@ public class Main {
         {
             System.out.println("Delta am khong the tinh can Delta");
         }
+        scanner.close();
     }
 }
